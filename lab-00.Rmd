@@ -17,18 +17,20 @@ We set up the data frame. Edit the data below to include information about your 
 
 ```{r setup-tibble}
 team_data <- tibble(
-  name = c("Peter Rabbit", "member 1", "member 2", 
-           "member 3", "member 4"),
-  github_username = c("mcgregors-garden", "username 1", "username 2", 
-                      "username 3", "username 4"), 
-  colour = c("powderblue", "colour 1", "colour 2", 
-             "colour 3", "colour 4"),
-  hobby = c("Hopping", "hobby 1", "hobby 2", 
-            "hobby 3", "hobby 4"),
-  favourite_number = c(2, NA, NA, NA, NA)
+  name = c("Alexander", "Adam", "Jessica", 
+           "Amy", "Harry"),
+  github_username = c("AlexanderDug", "Adam-Smit05", "jessicapart", 
+                      "amyha11", "harryj0603"), 
+  colour = c("chartreuse", "green4", "green", 
+             "blue", "orange"),
+  hobby = c("Hockey", "Playing Guitar", "Rowing", 
+            "Rock Climbing", "Chess"),
+  favourite_number = c(3, 7, 8, 7, 7)
   )
 
 team_data
+
+ 
 ```
 
 ### Exercise 18
@@ -47,19 +49,19 @@ p1
 ```
 
 
-*Remove this text (including the stars), and add your answer for Exercise 18 here.*
+3 of the 5 peoples favourite colour and number is green and 7 respectively
 
 ### Exercises 19
 
 Change the text of the plot title and axis labels.
 
 ```{r labelled-bar-plot}
-p1 + labs(x = "Insert text here", 
-          y = "Insert text here",
-          title = "Insert text here")
+p1 + labs(x = "Names", 
+          y = "Favourite Number",
+          title = "Favourite Number of Different People")
 ```
 
-*Remove this text (including the stars), and add your answer for Exercise 19 here.*
+Labs is used to rename axis and give other such titles
 
 ### Exercise 20
 
@@ -69,4 +71,4 @@ p2 <- ggplot(team_data, aes(x = hobby)) +
 p2
 ```
 
-*Remove this text (including the stars) and add your answer for Exercise 20 here.*
+Seen as everyone is spread across different hobbies, it is difficult to show the spread of hobbies with a bar chart because it will likely be very flat with a couple spikes. Bar charts would also end up being really long with all the different inputted values. I believe a pie chart would be a better choice as it is a more compact way of displaying the data and can easily show if any hobbies are more popular. 
